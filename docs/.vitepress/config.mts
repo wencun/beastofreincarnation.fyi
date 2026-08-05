@@ -18,11 +18,11 @@ export default defineConfig({
     logo: { src: '/mark.svg', alt: 'BOR Guide' },
     search: { provider: 'local', options: { locales: { ja: { translations: { button: { buttonText: '検索', buttonAriaLabel: '検索' }, modal: { noResultsText: '結果がありません', resetButtonTitle: '検索をリセット', footer: { selectText: '選択', navigateText: '移動', closeText: '閉じる' } } } } } } },
     socialLinks: [],
-    footer: { message: 'Unofficial fan guide. Not affiliated with or endorsed by GAME FREAK, Fictions, or platform holders.', copyright: '© 2026 beastofreincarnation.gg' }
+    footer: { message: 'Unofficial fan guide. Not affiliated with or endorsed by GAME FREAK, Fictions, or platform holders.', copyright: '© 2026 beastofreincarnation.fyi' }
   },
   locales: {
     root: { label: 'English', lang: 'en', link: '/en/', themeConfig: { nav: navEn(), sidebar: sidebarEn(), outline: { label: 'On this page' }, docFooter: { prev: 'Previous', next: 'Next' } } },
-    ja: { label: '日本語', lang: 'ja', link: '/ja/', themeConfig: { nav: navJa(), sidebar: sidebarJa(), outline: { label: 'このページの内容' }, lastUpdated: { text: '最終更新' }, docFooter: { prev: '前へ', next: '次へ' }, footer: { message: '非公式ファン攻略サイトです。GAME FREAK、Fictions、各プラットフォームとは関係なく、公認も受けていません。', copyright: '© 2026 beastofreincarnation.gg' } } }
+    ja: { label: '日本語', lang: 'ja', link: '/ja/', themeConfig: { nav: navJa(), sidebar: sidebarJa(), outline: { label: 'このページの内容' }, lastUpdated: { text: '最終更新' }, docFooter: { prev: '前へ', next: '次へ' }, footer: { message: '非公式ファン攻略サイトです。GAME FREAK、Fictions、各プラットフォームとは関係なく、公認も受けていません。', copyright: '© 2026 beastofreincarnation.fyi' } } }
   },
   transformHead({ pageData }) {
     const path = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
