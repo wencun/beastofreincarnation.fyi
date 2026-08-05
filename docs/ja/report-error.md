@@ -1,6 +1,6 @@
 # 誤りを報告
 
-正確な回答を保つためのご協力に感謝します。**errors@beastofreincarnation.gg** 宛に次の情報をお送りください。
+正確な回答を保つためのご協力に感謝します。**errors@beastofreincarnation.fyi** 宛に次の情報をお送りください。
 
 1. ページURL。
 2. 誤っている可能性がある文章または手順。
