@@ -1,0 +1,1 @@
+{"name":"beast-of-reincarnation-guide","private":true,"type":"module","scripts":{"dev":"vitepress dev docs --host 0.0.0.0","build":"vitepress build docs && node scripts/prepare-sites.mjs","preview":"vitepress preview docs"},"devDependencies":{"vitepress":"^1.6.4","vue":"^3.5.18"}}
