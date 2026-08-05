@@ -1,6 +1,6 @@
 # Report an Error
 
-Thank you for helping keep answers accurate. Email **errors@beastofreincarnation.gg** with:
+Thank you for helping keep answers accurate. Email **errors@beastofreincarnation.fyi** with:
 
 1. The page URL.
 2. The exact statement or step that may be wrong.
