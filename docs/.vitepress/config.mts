@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const domain = 'https://beastofreincarnation.gg'
+const domain = 'https://beastofreincarnation.fyi'
 
 export default defineConfig({
   title: 'Beast of Reincarnation Guide',
