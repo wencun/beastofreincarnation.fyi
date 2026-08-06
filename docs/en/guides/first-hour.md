@@ -20,9 +20,6 @@ description: A spoiler-free, verification-safe first-hour checklist.
 4. Practice parrying a readable enemy attack.
 5. Open Koo’s command menu and observe how the action slows.
 6. Read each skill, gear, and spirit-stone description before spending resources.
-
-<div class="ad-slot">Advertisement space — after answer and steps</div>
-
 ## If this did not work
 Lower the difficulty or adjust control and display options if available in your version. If a menu name differs, use the retail build’s wording; this guide avoids inventing exact values or unlock points.
 
