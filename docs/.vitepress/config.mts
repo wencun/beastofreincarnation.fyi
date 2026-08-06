@@ -36,7 +36,7 @@ function keywordsFor(path: string) {
 }
 
 export default defineConfig({
-  title: 'Beast of Reincarnation Guide',
+  title: 'Beast of Reincarnation: Comprehensive Player Guide',
   description: 'Fast, verified answers for Beast of Reincarnation players.',
   cleanUrls: true,
   lastUpdated: true,
