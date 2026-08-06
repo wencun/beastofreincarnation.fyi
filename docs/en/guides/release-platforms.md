@@ -18,9 +18,6 @@ description: Confirmed release dates and platforms.
 3. Check the local unlock date and time shown by the store.
 4. Confirm available storage after the store publishes the final download size.
 5. Install only through your platform’s official library.
-
-<div class="ad-slot">Advertisement space — after answer and steps</div>
-
 ## If this did not work
 If the game still shows as unavailable after the listed time, restart the store client and recheck the regional product page. Store rollout times can differ; avoid unofficial executables.
 
