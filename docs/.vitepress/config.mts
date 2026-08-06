@@ -13,6 +13,7 @@ const trackingHead = [
 ]
 
 const keywordByPath: Record<string, string> = {
+  '': 'Beast of Reincarnation, game guide, combat system, verified information, PC requirements, character abilities, release date, unofficial fan guide',
   'en/': 'Beast of Reincarnation, game guide, combat system, verified information, PC requirements, character abilities, release date, unofficial fan guide',
   'en/information/': 'Beast of Reincarnation information, release date, Game Pass, PS5, open world, gameplay, trailer, Switch 2, pre order',
   'en/information/game-pass': 'Beast of Reincarnation Game Pass, Xbox Game Pass, PC Game Pass, release date',
