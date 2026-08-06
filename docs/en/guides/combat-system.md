@@ -21,9 +21,6 @@ description: A concise explanation of Emma and Koo's hybrid combat system.
 4. Open Koo’s command menu when you need a tactical skill.
 5. Choose a skill while the action is slowed.
 6. Return to Emma’s real-time actions and continue the sequence.
-
-<div class="ad-slot">Advertisement space — after answer and steps</div>
-
 ## If this did not work
 
 If the command menu or button differs, check the in-game control layout for your platform. We do not publish an exact button until it is verified against the retail build.
