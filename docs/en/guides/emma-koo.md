@@ -18,9 +18,6 @@ description: Officially confirmed abilities for Beast of Reincarnation's protago
 3. Use height and positioning for the demonstrated falling assassination.
 4. Open Koo’s command menu to select a supporting technique.
 5. Adapt your loadout through the published skill tree, gear, and spirit-stone systems.
-
-<div class="ad-slot">Advertisement space — after answer and steps</div>
-
 ## If this did not work
 An ability may require story progress or an unlock not detailed in pre-release material. Check the in-game skill description; do not spend resources based on unverified community claims.
 
