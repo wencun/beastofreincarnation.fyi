@@ -2,6 +2,39 @@ import { defineConfig } from 'vitepress'
 
 const domain = 'https://beastofreincarnation.fyi'
 
+const keywordByPath: Record<string, string> = {
+  'en/': 'Beast of Reincarnation, game guide, combat system, verified information, PC requirements, character abilities, release date, unofficial fan guide',
+  'en/information/': 'Beast of Reincarnation information, release date, Game Pass, PS5, open world, gameplay, trailer, Switch 2, pre order',
+  'en/information/game-pass': 'Beast of Reincarnation Game Pass, Xbox Game Pass, PC Game Pass, release date',
+  'en/information/ps5': 'Beast of Reincarnation PS5, PlayStation 5, release date, gameplay',
+  'en/information/open-world': 'Beast of Reincarnation open world, game world, verified information',
+  'en/information/gameplay': 'Beast of Reincarnation gameplay, combat system, character abilities, Emma Koo',
+  'en/information/trailers': 'Beast of Reincarnation trailer, official trailer, gameplay trailer',
+  'en/information/switch-2': 'Beast of Reincarnation Switch 2, Nintendo Switch 2, platform availability',
+  'en/information/editions': 'Beast of Reincarnation pre order, editions, bonuses, release date',
+  'en/guides/release-platforms': 'Beast of Reincarnation release date, platforms, PS5, Xbox Series X S, PC, Game Pass',
+  'en/guides/combat-system': 'Beast of Reincarnation combat system, gameplay, character abilities, Emma Koo',
+  'en/guides/emma-koo': 'Beast of Reincarnation Emma Koo, character abilities, combat system',
+  'en/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements, PC game',
+  'en/guides/first-hour': 'Beast of Reincarnation beginner guide, first hour, gameplay guide',
+  'fr/': 'Beast of Reincarnation guide, date de sortie, Game Pass, PS5, monde ouvert, gameplay, bande annonce, Switch 2',
+  'fr/information/': 'Beast of Reincarnation informations verifiees, date de sortie, Game Pass, PS5, monde ouvert, gameplay, bande annonce, Switch 2, precommande',
+  'fr/information/game-pass': 'Beast of Reincarnation Game Pass, Xbox Game Pass, PC Game Pass',
+  'fr/information/ps5': 'Beast of Reincarnation PS5, PlayStation 5, date de sortie',
+  'fr/information/open-world': 'Beast of Reincarnation monde ouvert, informations verifiees',
+  'fr/information/gameplay': 'Beast of Reincarnation gameplay, systeme de combat, capacites',
+  'fr/information/trailers': 'Beast of Reincarnation bande annonce, trailer officiel, gameplay',
+  'fr/information/switch-2': 'Beast of Reincarnation Switch 2, Nintendo Switch 2',
+  'fr/information/editions': 'Beast of Reincarnation precommande, editions, bonus',
+  'ja/guides/release-platforms': 'Beast of Reincarnation release date, PS5, Xbox Series X S, PC, Game Pass',
+  'ja/guides/combat-system': 'Beast of Reincarnation combat system, gameplay, character abilities',
+  'ja/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements'
+}
+
+function keywordsFor(path: string) {
+  return keywordByPath[path]
+}
+
 export default defineConfig({
   title: 'Beast of Reincarnation Guide',
   description: 'Fast, verified answers for Beast of Reincarnation players.',
@@ -37,8 +70,11 @@ export default defineConfig({
       { rel: 'alternate', hreflang: language, href: `${domain}/${language}/${route}` }
     ])
 
+    const keywords = keywordsFor(path)
+
     return [
       ['link', { rel: 'canonical', href: canonical }],
+      ...(keywords ? [['meta', { name: 'keywords', content: keywords }]] : []),
       ...alternateLinks,
       ...(alternateLocales.length ? [['link', { rel: 'alternate', hreflang: 'x-default', href: `${domain}/en/${route}` }]] : [])
     ]
