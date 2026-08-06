@@ -41,8 +41,17 @@ const keywordByPath: Record<string, string> = {
   'ja/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements'
 }
 
+const defaultKeywordsByLocale: Record<string, string> = {
+  en: 'Beast of Reincarnation, Beast of Reincarnation guide, game guide, verified information, combat system, release date, unofficial fan guide',
+  fr: 'Beast of Reincarnation, guide Beast of Reincarnation, informations verifiees, date de sortie, Game Pass, PS5',
+  ja: 'Beast of Reincarnation, 攻略, 戦闘システム, 発売日, PC 必要動作環境'
+}
+
 function keywordsFor(path: string) {
-  return keywordByPath[path]
+  if (keywordByPath[path]) return keywordByPath[path]
+  if (path.startsWith('fr/')) return defaultKeywordsByLocale.fr
+  if (path.startsWith('ja/')) return defaultKeywordsByLocale.ja
+  return defaultKeywordsByLocale.en
 }
 
 export default defineConfig({
