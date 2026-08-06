@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
+declare global { interface Window { gtag?: (...args: unknown[]) => void } }
+
 const storageKey = 'bor-analytics-consent'
 const visible = ref(false)
 
