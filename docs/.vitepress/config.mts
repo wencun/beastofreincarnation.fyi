@@ -22,36 +22,69 @@ export default defineConfig({
   },
   locales: {
     root: { label: 'English', lang: 'en', link: '/en/', themeConfig: { nav: navEn(), sidebar: sidebarEn(), outline: { label: 'On this page' }, docFooter: { prev: 'Previous', next: 'Next' } } },
+    fr: { label: 'Francais', lang: 'fr', link: '/fr/', themeConfig: { nav: navFr(), sidebar: sidebarFr(), outline: { label: 'Sur cette page' }, docFooter: { prev: 'Precedent', next: 'Suivant' }, footer: { message: 'Guide de fans non officiel. Sans affiliation ni approbation de GAME FREAK, Fictions ou des plateformes.', copyright: '© 2026 beastofreincarnation.fyi' } } },
     ja: { label: '日本語', lang: 'ja', link: '/ja/', themeConfig: { nav: navJa(), sidebar: sidebarJa(), outline: { label: 'このページの内容' }, lastUpdated: { text: '最終更新' }, docFooter: { prev: '前へ', next: '次へ' }, footer: { message: '非公式ファン攻略サイトです。GAME FREAK、Fictions、各プラットフォームとは関係なく、公認も受けていません。', copyright: '© 2026 beastofreincarnation.fyi' } } }
   },
   transformHead({ pageData }) {
     const path = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
     const canonical = `${domain}/${path}`
-    const alternate = path.startsWith('ja/') ? path.replace(/^ja\//, 'en/') : path.replace(/^en\//, 'ja/')
+    const isInformationPage = path.startsWith('en/information/') || path.startsWith('fr/information/')
+    const locale = path.startsWith('fr/') ? 'fr' : path.startsWith('ja/') ? 'ja' : path.startsWith('en/') ? 'en' : ''
+    const route = locale ? path.slice(locale.length + 1) : ''
+    const alternateLocales = isInformationPage ? ['en', 'fr'] : locale ? ['en', 'ja'] : []
+    const alternateLinks = alternateLocales.map((language) => [
+      'link',
+      { rel: 'alternate', hreflang: language, href: `${domain}/${language}/${route}` }
+    ])
+
     return [
       ['link', { rel: 'canonical', href: canonical }],
-      ['link', { rel: 'alternate', hreflang: path.startsWith('ja/') ? 'ja' : 'en', href: canonical }],
-      ['link', { rel: 'alternate', hreflang: path.startsWith('ja/') ? 'en' : 'ja', href: `${domain}/${alternate}` }],
-      ['link', { rel: 'alternate', hreflang: 'x-default', href: `${domain}/${path.replace(/^ja\//, 'en/')}` }]
+      ...alternateLinks,
+      ...(alternateLocales.length ? [['link', { rel: 'alternate', hreflang: 'x-default', href: `${domain}/en/${route}` }]] : [])
     ]
   }
 })
 
 function navEn() { return [
   { text: 'Start', link: '/en/guides/first-hour' }, { text: 'Combat', link: '/en/guides/combat-system' },
-  { text: 'PC Help', link: '/en/guides/pc-requirements' }, { text: 'All Guides', link: '/en/guides/' }, { text: 'Report an Error', link: '/en/report-error' }
+  { text: 'Verified info', link: '/en/information/' }, { text: 'PC Help', link: '/en/guides/pc-requirements' },
+  { text: 'All Guides', link: '/en/guides/' }, { text: 'Report an Error', link: '/en/report-error' }
+] }
+function navFr() { return [
+  { text: 'Infos verifiees', link: '/fr/information/' }, { text: 'Game Pass', link: '/fr/information/game-pass' },
+  { text: 'PS5', link: '/fr/information/ps5' }, { text: 'Nintendo Switch 2', link: '/fr/information/switch-2' }
 ] }
 function navJa() { return [
   { text: 'はじめに', link: '/ja/guides/first-hour' }, { text: '戦闘', link: '/ja/guides/combat-system' },
   { text: 'PCヘルプ', link: '/ja/guides/pc-requirements' }, { text: '全ガイド', link: '/ja/guides/' }, { text: '誤りを報告', link: '/ja/report-error' }
 ] }
-function sidebarEn() { return [{ text: 'Guides', items: [
-  { text: 'All guides', link: '/en/guides/' }, { text: 'Your first hour', link: '/en/guides/first-hour' },
-  { text: 'How combat works', link: '/en/guides/combat-system' }, { text: 'Emma & Koo abilities', link: '/en/guides/emma-koo' },
-  { text: 'PC requirements', link: '/en/guides/pc-requirements' }, { text: 'Release & platforms', link: '/en/guides/release-platforms' }
-] }, { text: 'Site', items: [{ text: 'About', link: '/en/about' }, { text: 'Privacy', link: '/en/privacy' }, { text: 'Contact', link: '/en/contact' }] }] }
-function sidebarJa() { return [{ text: 'ガイド', items: [
-  { text: '全ガイド', link: '/ja/guides/' }, { text: '最初の1時間', link: '/ja/guides/first-hour' },
-  { text: '戦闘システム', link: '/ja/guides/combat-system' }, { text: 'エマとクゥの能力', link: '/ja/guides/emma-koo' },
-  { text: 'PC動作環境', link: '/ja/guides/pc-requirements' }, { text: '発売日と対応機種', link: '/ja/guides/release-platforms' }
-] }, { text: 'サイト情報', items: [{ text: 'このサイトについて', link: '/ja/about' }, { text: 'プライバシー', link: '/ja/privacy' }, { text: 'お問い合わせ', link: '/ja/contact' }] }] }
+function sidebarEn() { return [
+  { text: 'Verified Information', items: [
+    { text: 'All verified information', link: '/en/information/' }, { text: 'Game Pass', link: '/en/information/game-pass' },
+    { text: 'PS5', link: '/en/information/ps5' }, { text: 'Is it open world?', link: '/en/information/open-world' },
+    { text: 'Gameplay explained', link: '/en/information/gameplay' }, { text: 'Official trailers', link: '/en/information/trailers' },
+    { text: 'Nintendo Switch 2', link: '/en/information/switch-2' }, { text: 'Editions and bonuses', link: '/en/information/editions' }
+  ] },
+  { text: 'Guides', items: [
+    { text: 'All guides', link: '/en/guides/' }, { text: 'Your first hour', link: '/en/guides/first-hour' },
+    { text: 'How combat works', link: '/en/guides/combat-system' }, { text: 'Emma & Koo abilities', link: '/en/guides/emma-koo' },
+    { text: 'PC requirements', link: '/en/guides/pc-requirements' }, { text: 'Release & platforms', link: '/en/guides/release-platforms' }
+  ] },
+  { text: 'Site', items: [{ text: 'About', link: '/en/about' }, { text: 'Privacy', link: '/en/privacy' }, { text: 'Contact', link: '/en/contact' }] }
+] }
+function sidebarFr() { return [
+  { text: 'Informations verifiees', items: [
+    { text: 'Toutes les informations', link: '/fr/information/' }, { text: 'Game Pass', link: '/fr/information/game-pass' },
+    { text: 'PS5', link: '/fr/information/ps5' }, { text: 'Monde ouvert ?', link: '/fr/information/open-world' },
+    { text: 'Gameplay', link: '/fr/information/gameplay' }, { text: 'Bandes-annonces', link: '/fr/information/trailers' },
+    { text: 'Nintendo Switch 2', link: '/fr/information/switch-2' }, { text: 'Editions et bonus', link: '/fr/information/editions' }
+  ] }
+] }
+function sidebarJa() { return [
+  { text: 'ガイド', items: [
+    { text: '全ガイド', link: '/ja/guides/' }, { text: '最初の1時間', link: '/ja/guides/first-hour' },
+    { text: '戦闘システム', link: '/ja/guides/combat-system' }, { text: 'エマとクゥの能力', link: '/ja/guides/emma-koo' },
+    { text: 'PC動作環境', link: '/ja/guides/pc-requirements' }, { text: '発売日と対応機種', link: '/ja/guides/release-platforms' }
+  ] },
+  { text: 'サイト情報', items: [{ text: 'このサイトについて', link: '/ja/about' }, { text: 'プライバシー', link: '/ja/privacy' }, { text: 'お問い合わせ', link: '/ja/contact' }] }
+] }
