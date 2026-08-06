@@ -19,9 +19,6 @@ description: The confirmed PC system requirements for Beast of Reincarnation.
 3. Confirm that **System type** says 64-bit.
 4. Confirm your Windows edition is Windows 11.
 5. Compare the remaining hardware only after the official listing publishes full values.
-
-<div class="ad-slot">Advertisement space — after answer and steps</div>
-
 ## If this did not work
 If the game fails to launch, capture the exact error and check the official support channel or Steam update notes. We will not recommend risky registry, BIOS, or save-file changes without reproduction.
 
