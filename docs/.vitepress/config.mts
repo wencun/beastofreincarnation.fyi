@@ -1,6 +1,16 @@
 import { defineConfig } from 'vitepress'
 
 const domain = 'https://beastofreincarnation.fyi'
+const gaId = process.env.NEXT_PUBLIC_GA_ID?.trim()
+const clarityId = process.env.CLARITY_ID?.trim()
+
+const trackingHead = [
+  ...(gaId ? [
+    ['script', { async: '', src: `https://www.googletagmanager.com/gtag/js?id=${gaId}` }],
+    ['script', {}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});gtag('js',new Date());gtag('config','${gaId}',{anonymize_ip:true});`]
+  ] : []),
+  ...(clarityId ? [['meta', { name: 'clarity-id', content: clarityId }]] : [])
+]
 
 const keywordByPath: Record<string, string> = {
   'en/': 'Beast of Reincarnation, game guide, combat system, verified information, PC requirements, character abilities, release date, unofficial fan guide',
@@ -42,6 +52,7 @@ export default defineConfig({
   lastUpdated: true,
   sitemap: { hostname: domain },
   head: [
+    ...trackingHead,
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#d4ff5c' }],
     ['meta', { property: 'og:type', content: 'website' }],
