@@ -4,7 +4,7 @@ title: Beast of Reincarnation Guide
 hero:
   name: Answers before lore.
   text: Beast of Reincarnation Guide
-  tagline: Fast, verified answers for Beast of Reincarnation players. Official facts and clearly labeled community feedback. No invented claims or ads before the answer.
+  tagline: Fast, verified answers for Beast of Reincarnation players. Official facts and clearly labeled community feedback. No invented claims.
   actions:
     - theme: brand
       text: Browse all guides
