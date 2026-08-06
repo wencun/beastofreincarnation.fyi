@@ -4,7 +4,7 @@ description: Verified Beast of Reincarnation guides.
 ---
 # All Guides
 
-Five focused answers based only on published official information. In-game walkthroughs will be added after hands-on verification.
+Five focused answers based only on published official information. In-game walkthroughs will be added after hands-on verification. For platform, edition, and purchase-status answers, see [Verified Information](/en/information/).
 
 - [What should you know before your first hour?](/en/guides/first-hour)
 - [How does combat work?](/en/guides/combat-system)
