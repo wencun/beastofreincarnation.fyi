@@ -4,7 +4,7 @@ title: Beast of Reincarnation Guide
 hero:
   name: Answers before lore.
   text: Beast of Reincarnation Guide
-  tagline: Fast, verified answers for Beast of Reincarnation players. No filler, no invented facts, and no ads before the answer.
+  tagline: Fast, verified answers for Beast of Reincarnation players. Official facts and clearly labeled community feedback. No invented claims or ads before the answer.
   actions:
     - theme: brand
       text: Browse all guides
@@ -26,6 +26,10 @@ features:
     details: Officially confirmed abilities for Emma and Koo.
     link: /en/guides/emma-koo
   - icon: '04'
+    title: Verified information
+    details: Platforms, editions, trailers, and current-status answers with sources.
+    link: /en/information/
+  - icon: '05'
     title: PC Help
     details: Published Windows requirements and what remains unconfirmed.
     link: /en/guides/pc-requirements
@@ -34,6 +38,8 @@ features:
 ## Recently updated
 
 <div class="home-grid">
+<a class="home-card" href="/en/information/"><b>Verified information</b><span>Platforms, editions, trailers, and source-checked answers.</span></a>
+<a class="home-card" href="/en/information/game-pass"><b>Game Pass</b><span>Current official Game Pass availability.</span></a>
 <a class="home-card" href="/en/guides/release-platforms"><b>Release date & platforms</b><span>Confirmed PC and PS5 launch information.</span></a>
 <a class="home-card" href="/en/guides/combat-system"><b>How combat works</b><span>The real-time and command-based split.</span></a>
 <a class="home-card" href="/en/guides/pc-requirements"><b>PC requirements</b><span>What the Steam listing currently confirms.</span></a>
