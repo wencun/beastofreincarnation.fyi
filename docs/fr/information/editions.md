@@ -8,6 +8,10 @@ description: Ou verifier le contenu actuel des editions Standard et Deluxe et la
 
 Les bonus de precommande dependent de la date et de la region. Le jeu etant sorti, verifiez la fiche de vente en direct avant tout achat.
 
+## Bonus ou DLC manquant ?
+
+Si un achat eligible ne donne pas le contenu attendu, consultez la [liste de verification bonus ou DLC manquant](/fr/guides/missing-pre-order-bonus-dlc). Elle distingue le canal d achat des etapes dans le jeu et ne promet pas de correction non verifiee.
+
 ## Sources
 
 - [Details des editions Xbox](https://www.xbox.com/en-US/games/beast-of-reincarnation)
