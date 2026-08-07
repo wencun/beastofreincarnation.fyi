@@ -28,6 +28,7 @@ const keywordByPath: Record<string, string> = {
   'en/guides/emma-koo': 'Beast of Reincarnation Emma Koo, character abilities, combat system',
   'en/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements, PC game',
   'en/guides/first-hour': 'Beast of Reincarnation beginner guide, first hour, gameplay guide',
+  'en/guides/missing-pre-order-bonus-dlc': 'Beast of Reincarnation missing pre order bonus, missing DLC, Deluxe DLC, Steam support',
   'fr/': 'Beast of Reincarnation guide, date de sortie, Game Pass, PS5, monde ouvert, gameplay, bande annonce, Switch 2',
   'fr/information/': 'Beast of Reincarnation informations verifiees, date de sortie, Game Pass, PS5, monde ouvert, gameplay, bande annonce, Switch 2, precommande',
   'fr/information/game-pass': 'Beast of Reincarnation Game Pass, Xbox Game Pass, PC Game Pass',
@@ -37,6 +38,7 @@ const keywordByPath: Record<string, string> = {
   'fr/information/trailers': 'Beast of Reincarnation bande annonce, trailer officiel, gameplay',
   'fr/information/switch-2': 'Beast of Reincarnation Switch 2, Nintendo Switch 2',
   'fr/information/editions': 'Beast of Reincarnation precommande, editions, bonus',
+  'fr/guides/missing-pre-order-bonus-dlc': 'Beast of Reincarnation bonus de precommande manquant, DLC manquant, support Steam',
   'ja/guides/release-platforms': 'Beast of Reincarnation release date, PS5, Xbox Series X S, PC, Game Pass',
   'ja/guides/combat-system': 'Beast of Reincarnation combat system, gameplay, character abilities',
   'ja/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements'
@@ -82,10 +84,10 @@ export default defineConfig({
   transformHead({ pageData }) {
     const path = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
     const canonical = `${domain}/${path}`
-    const isInformationPage = path.startsWith('en/information/') || path.startsWith('fr/information/')
+    const hasFrenchTranslation = path.startsWith('en/') || path.startsWith('fr/')
     const locale = path.startsWith('fr/') ? 'fr' : path.startsWith('ja/') ? 'ja' : path.startsWith('en/') ? 'en' : ''
     const route = locale ? path.slice(locale.length + 1) : ''
-    const alternateLocales = isInformationPage ? ['en', 'fr'] : locale ? ['en', 'ja'] : []
+    const alternateLocales = hasFrenchTranslation ? ['en', 'fr'] : locale ? ['en', 'ja'] : []
     const alternateLinks = alternateLocales.map((language) => [
       'link',
       { rel: 'alternate', hreflang: language, href: `${domain}/${language}/${route}` }
@@ -108,8 +110,9 @@ function navEn() { return [
   { text: 'All Guides', link: '/en/guides/' }, { text: 'Report an Error', link: '/en/report-error' }
 ] }
 function navFr() { return [
-  { text: 'Infos verifiees', link: '/fr/information/' }, { text: 'Game Pass', link: '/fr/information/game-pass' },
-  { text: 'PS5', link: '/fr/information/ps5' }, { text: 'Nintendo Switch 2', link: '/fr/information/switch-2' }
+  { text: 'Debuter', link: '/fr/guides/first-hour' }, { text: 'Combat', link: '/fr/guides/combat-system' },
+  { text: 'Infos verifiees', link: '/fr/information/' }, { text: 'Aide PC', link: '/fr/guides/pc-requirements' },
+  { text: 'Tous les guides', link: '/fr/guides/' }, { text: 'Signaler une erreur', link: '/fr/report-error' }
 ] }
 function navJa() { return [
   { text: 'はじめに', link: '/ja/guides/first-hour' }, { text: '戦闘', link: '/ja/guides/combat-system' },
@@ -135,7 +138,14 @@ function sidebarFr() { return [
     { text: 'PS5', link: '/fr/information/ps5' }, { text: 'Monde ouvert ?', link: '/fr/information/open-world' },
     { text: 'Gameplay', link: '/fr/information/gameplay' }, { text: 'Bandes-annonces', link: '/fr/information/trailers' },
     { text: 'Nintendo Switch 2', link: '/fr/information/switch-2' }, { text: 'Editions et bonus', link: '/fr/information/editions' }
-  ] }
+  ] },
+  { text: 'Guides', items: [
+    { text: 'Tous les guides', link: '/fr/guides/' }, { text: 'Premiere heure', link: '/fr/guides/first-hour' },
+    { text: 'Systeme de combat', link: '/fr/guides/combat-system' }, { text: 'Capacites d Emma et Koo', link: '/fr/guides/emma-koo' },
+    { text: 'Configuration PC', link: '/fr/guides/pc-requirements' }, { text: 'Sortie et plateformes', link: '/fr/guides/release-platforms' },
+    { text: 'Bonus ou DLC manquant', link: '/fr/guides/missing-pre-order-bonus-dlc' }
+  ] },
+  { text: 'Site', items: [{ text: 'A propos', link: '/fr/about' }, { text: 'Confidentialite', link: '/fr/privacy' }, { text: 'Contact', link: '/fr/contact' }] }
 ] }
 function sidebarJa() { return [
   { text: 'ガイド', items: [
