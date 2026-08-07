@@ -11,3 +11,4 @@ Five focused answers based only on published official information. In-game walkt
 - [What can Emma and Koo do?](/en/guides/emma-koo)
 - [What are the PC requirements?](/en/guides/pc-requirements)
 - [When and where is the game releasing?](/en/guides/release-platforms)
+- [What should you do if a pre-order bonus or Deluxe DLC is missing?](/en/guides/missing-pre-order-bonus-dlc)
