@@ -15,3 +15,4 @@ Chaque affirmation est etiquetee **Confirme officiellement**, **Signale par la c
 - [Bandes-annonces officielles](/fr/information/trailers)
 - [Statut Nintendo Switch 2](/fr/information/switch-2)
 - [Editions et bonus de precommande](/fr/information/editions)
+- [Bonus de precommande ou DLC manquant](/fr/guides/missing-pre-order-bonus-dlc)
