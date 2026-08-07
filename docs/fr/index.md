@@ -4,14 +4,14 @@ title: Guide Beast of Reincarnation
 hero:
   name: Des reponses verifiees.
   text: Guide Beast of Reincarnation
-  tagline: Informations officielles et retours de communaute clairement etiquetes. Aucune affirmation inventee et aucune publicite avant la reponse.
+  tagline: Informations officielles et retours de communaute clairement ეტiquetes. Aucune affirmation inventee.
   actions:
     - theme: brand
       text: Informations verifiees
       link: /fr/information/
     - theme: alt
-      text: Game Pass
-      link: /fr/information/game-pass
+      text: Tous les guides
+      link: /fr/guides/
 features:
   - icon: '01'
     title: Informations verifiees
@@ -26,9 +26,9 @@ features:
     details: Disponibilite officielle de la version PlayStation 5.
     link: /fr/information/ps5
   - icon: '04'
-    title: Nintendo Switch 2
-    details: Statut actuel, sans rumeurs presentees comme des faits.
-    link: /fr/information/switch-2
+    title: Guides de jeu
+    details: Combat, premiere heure, PC et plateformes.
+    link: /fr/guides/
 ---
 
 ## A verifier avant d'acheter
@@ -38,6 +38,8 @@ features:
 <a class="home-card" href="/fr/information/gameplay"><b>Gameplay explique</b><span>Emma, Koo et le combat avec sources.</span></a>
 <a class="home-card" href="/fr/information/trailers"><b>Bandes-annonces officielles</b><span>Ou voir les medias publies.</span></a>
 <a class="home-card" href="/fr/information/editions"><b>Editions et bonus</b><span>Comment verifier les contenus actuels.</span></a>
+<a class="home-card" href="/fr/guides/missing-pre-order-bonus-dlc"><b>Bonus ou DLC manquant</b><span>Verifier l achat et contacter le bon support.</span></a>
+<a class="home-card" href="/fr/guides/"><b>Tous les guides</b><span>Combat, premiere heure, PC et plateformes.</span></a>
 </div>
 
 Guide de fans non officiel. Beast of Reincarnation et les elements associes appartiennent a leurs titulaires respectifs.
