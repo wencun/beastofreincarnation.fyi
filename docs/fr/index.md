@@ -4,7 +4,7 @@ title: Guide Beast of Reincarnation
 hero:
   name: Des reponses verifiees.
   text: Guide Beast of Reincarnation
-  tagline: Informations officielles et retours de communaute clairement ეტiquetes. Aucune affirmation inventee.
+  tagline: Informations officielles et retours de communaute clairement etiquetees. Aucune affirmation inventee.
   actions:
     - theme: brand
       text: Informations verifiees
