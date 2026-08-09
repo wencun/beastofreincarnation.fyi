@@ -4,6 +4,10 @@
 
 This site has no accounts, comments, or user database. We use optional analytics only after you choose to accept them in the on-site consent prompt.
 
+## Advertising
+
+We use Google AdSense to display advertising. Google and its partners may use cookies or similar identifiers to serve and measure ads, including ads based on a visitor's prior visits to this or other websites. You can manage ad personalization through [Google's Ad Settings](https://www.google.com/settings/ads) and learn more in [Google's Privacy & Terms](https://policies.google.com/technologies/ads).
+
 ## Optional analytics
 
 If you accept analytics, we use:
