@@ -4,9 +4,9 @@ description: Officially confirmed Beast of Reincarnation issue status, support l
 ---
 # Known Issues & Patch Status
 
-<div class="meta"><span>Last checked: Aug 9, 2026</span><span>Official-source tracker</span><span class="verified">No player speculation presented as fact</span></div>
+<div class="meta"><span>Last checked: Aug 9, 2026 · Patch update added</span><span>Official-source tracker</span><span class="verified">No player speculation presented as fact</span></div>
 
-<div class="quick-answer"><strong>Quick Answer</strong>There is currently no confirmed public date for the next Beast of Reincarnation patch in the official Steam Community posts we checked. The safest place to track confirmed fixes is the official Steam discussion hub, especially its pinned announcements and technical-issues thread.</div>
+<div class="quick-answer"><strong>Quick Answer</strong>A publicly shared GAME FREAK update targets the next patch <strong>within a week</strong>. The announced scope includes camera adjustments, larger text, making Performance mode the default, story-pacing work, and other bug fixes. The publisher notes that this scope can change.</div>
 
 ## Current official status
 
@@ -14,11 +14,16 @@ description: Officially confirmed Beast of Reincarnation issue status, support l
 | --- | --- | --- |
 | Pre-order DLC | Fixed | An official pinned Steam Community announcement is titled **“FIXED: Pre-Order DLC Issue.”** |
 | Technical problems and bug reports | Collecting reports | The official Steam Community has a pinned **Bug Reports and Technical Issues** thread. |
-| Next patch date | Not announced | We found no publisher-posted release date or schedule in the official discussion hub. |
+| Next patch | Targeted within a week | Planned items: camera adjustments, larger text, Performance mode as the default, story-pacing work, and other bug fixes. Scope may change. |
 | New language support | Not confirmed | Players are requesting languages such as Russian and Turkish, but requests are not an official commitment. |
 
+- [Patch update announcement shared with the community](https://www.reddit.com/r/BeastofReincarnation/comments/1vgdz5b/upcoming_patch_fixes_via_game_freak/)
 - [Official Steam discussions: announcements and support threads](https://steamcommunity.com/app/2001760/discussions/)
-- [Official Steam store page](https://steamcommunity.com/app/2001760)
+- [Official support and feedback form](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation)
+
+## Next patch: what is planned
+
+The announced targets are not a guarantee for every issue or platform. If you are affected by crashes, frame drops, dark interiors, controller problems, or another reproducible issue, send the exact platform, game version, and steps to reproduce through the official feedback form above.
 
 ## How we decide what appears here
 
