@@ -130,6 +130,9 @@ function sidebarEn() { return [
     { text: 'All guides', link: '/en/guides/' }, { text: 'Your first hour', link: '/en/guides/first-hour' },
     { text: 'How combat works', link: '/en/guides/combat-system' }, { text: 'Emma & Koo abilities', link: '/en/guides/emma-koo' },
     { text: 'PC requirements', link: '/en/guides/pc-requirements' }, { text: 'Release & platforms', link: '/en/guides/release-platforms' },
+    { text: 'Troubleshooting hub', link: '/en/guides/troubleshooting/' }, { text: 'PC crashes', link: '/en/guides/troubleshooting/pc-crashing' },
+    { text: 'Patch v1.0.7', link: '/en/guides/troubleshooting/patch-v1-0-7' }, { text: 'Controller settings', link: '/en/guides/troubleshooting/controller-settings' },
+    { text: 'Cutscene performance mode', link: '/en/guides/troubleshooting/cutscene-performance-mode' }, { text: 'Deluxe upgrade', link: '/en/guides/troubleshooting/deluxe-upgrade' },
     { text: 'Missing bonus or DLC', link: '/en/guides/missing-pre-order-bonus-dlc' }, { text: 'Known issues & patch status', link: '/en/guides/known-issues-patch-status' }
   ] },
   { text: 'Site', items: [{ text: 'About', link: '/en/about' }, { text: 'Privacy', link: '/en/privacy' }, { text: 'Contact', link: '/en/contact' }] }
