@@ -14,12 +14,16 @@ description: Officially confirmed Beast of Reincarnation issue status, support l
 | --- | --- | --- |
 | Pre-order DLC | Fixed | An official pinned Steam Community announcement is titled **“FIXED: Pre-Order DLC Issue.”** |
 | Technical problems and bug reports | Collecting reports | The official Steam Community has a pinned **Bug Reports and Technical Issues** thread. |
-| Patch v1.0.7 | Released | Camera and text-size adjustments; repeat affinity conversations limited to once per day; Performance mode becomes the default for cutscenes; a Bloom Art interaction fix. |
+| Patch v1.0.7 | Released | Camera and text-size adjustments; repeat affinity conversations limited to once per day; Performance mode becomes the default for cutscenes; boss adjustments across difficulties; Normal-difficulty enemy-encounter adjustments; input, display, and interaction fixes. |
 | New language support | Not confirmed | Players are requesting languages such as Russian and Turkish, but requests are not an official commitment. |
 
 - [v1.0.7 patch notes and planned future improvements](https://www.reddit.com/r/BeastofReincarnation/comments/1vjyy5u/beast_of_reincarnation_pc_patch_notes_v107_camera/)
 - [Official Steam discussions: announcements and support threads](https://steamcommunity.com/app/2001760/discussions/)
 - [Official support and feedback form](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation)
+
+## Balance adjustments in v1.0.7
+
+The published notes confirm boss adjustments across all difficulty levels and enemy-encounter adjustments on Normal difficulty. They do not give a per-boss, per-enemy, or numerical change list, so treat claims about exact balance values as unconfirmed.
 
 ## What is planned next
 
