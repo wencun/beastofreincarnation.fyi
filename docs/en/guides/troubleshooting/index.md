@@ -10,10 +10,13 @@ description: Source-checked help for Beast of Reincarnation PC crashes, patch st
 
 ## Choose your issue
 
+- [UE5 crash on launch or while playing](/en/guides/troubleshooting/ue5-crash-on-launch)
 - [Game crashes on PC (Steam or PC Game Pass)](/en/guides/troubleshooting/pc-crashing)
 - [Patch v1.0.7: what changed and what is planned](/en/guides/troubleshooting/patch-v1-0-7)
 - [Controller settings and button mapping](/en/guides/troubleshooting/controller-settings)
 - [Cutscene Performance mode and 24 FPS setting](/en/guides/troubleshooting/cutscene-performance-mode)
+- [Dark interiors: status and safe checks](/en/guides/troubleshooting/dark-interiors)
+- [Ultrawide, DLSS, FSR, and frame generation status](/en/guides/troubleshooting/ultrawide-dlss-fsr-status)
 - [Standard Edition to Digital Deluxe upgrade](/en/guides/troubleshooting/deluxe-upgrade)
 - [Missing pre-order bonus or Deluxe DLC](/en/guides/missing-pre-order-bonus-dlc)
 
