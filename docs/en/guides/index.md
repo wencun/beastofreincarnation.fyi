@@ -13,3 +13,4 @@ Five focused answers based only on published official information. In-game walkt
 - [When and where is the game releasing?](/en/guides/release-platforms)
 - [What should you do if a pre-order bonus or Deluxe DLC is missing?](/en/guides/missing-pre-order-bonus-dlc)
 - [Known issues and patch status](/en/guides/known-issues-patch-status)
+- [Troubleshooting hub: crashes, patches, controller, cutscenes, and Deluxe upgrades](/en/guides/troubleshooting/)
