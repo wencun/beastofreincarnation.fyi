@@ -38,6 +38,8 @@ features:
 ## Recently updated
 
 <div class="home-grid">
+<a class="home-card" href="/en/guides/troubleshooting/patch-v1-0-8"><b>Patch v1.0.8</b><span>DLSS, FSR, camera and subtitle changes, plus what is still planned.</span></a>
+<a class="home-card" href="/en/guides/troubleshooting/"><b>PC crashes & troubleshooting</b><span>Source-checked paths for UE5 crashes, controllers, cutscenes and upgrade issues.</span></a>
 <a class="home-card" href="/en/information/"><b>Verified information</b><span>Platforms, editions, trailers, and source-checked answers.</span></a>
 <a class="home-card" href="/en/information/game-pass"><b>Game Pass</b><span>Current official Game Pass availability.</span></a>
 <a class="home-card" href="/en/guides/release-platforms"><b>Release date & platforms</b><span>Confirmed PC and PS5 launch information.</span></a>
