@@ -4,7 +4,7 @@ description: Source-checked help for Beast of Reincarnation PC crashes, patch st
 ---
 # Beast of Reincarnation Troubleshooting
 
-<div class="meta"><span>Last checked: Aug 10, 2026</span><span>Official support-first</span><span class="verified">Current support articles linked</span></div>
+<div class="meta"><span>Last checked: Aug 16, 2026</span><span>Official support-first</span><span class="verified">Current support articles linked</span></div>
 
 <div class="quick-answer"><strong>Start here</strong>Choose the symptom below. These pages separate official fixes from safe checks and send account, purchase, and crash cases to Fictions Support when a player-side fix is not confirmed.</div>
 
@@ -12,7 +12,8 @@ description: Source-checked help for Beast of Reincarnation PC crashes, patch st
 
 - [UE5 crash on launch or while playing](/en/guides/troubleshooting/ue5-crash-on-launch)
 - [Game crashes on PC (Steam or PC Game Pass)](/en/guides/troubleshooting/pc-crashing)
-- [Patch v1.0.7: what changed and what is planned](/en/guides/troubleshooting/patch-v1-0-7)
+- [Patch v1.0.8: what changed and what is planned](/en/guides/troubleshooting/patch-v1-0-8)
+- [Patch v1.0.7 (previous patch)](/en/guides/troubleshooting/patch-v1-0-7)
 - [Controller settings and button mapping](/en/guides/troubleshooting/controller-settings)
 - [Cutscene Performance mode and 24 FPS setting](/en/guides/troubleshooting/cutscene-performance-mode)
 - [Dark interiors: status and safe checks](/en/guides/troubleshooting/dark-interiors)
