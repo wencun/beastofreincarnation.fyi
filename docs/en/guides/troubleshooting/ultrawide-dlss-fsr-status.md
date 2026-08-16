@@ -1,30 +1,40 @@
 ---
 title: Beast of Reincarnation Ultrawide, DLSS, FSR & Frame Generation Status
-description: Official status for Beast of Reincarnation ultrawide support, DLSS 4/4.5, FSR4, and frame generation.
+description: Official status for Beast of Reincarnation ultrawide support, DLSS 4/4.5, FSR4, frame generation, and PC Game Pass.
 ---
 # Beast of Reincarnation Ultrawide, DLSS, FSR & Frame Generation Status
 
-<div class="meta"><span>Last checked: Aug 10, 2026</span><span>PC graphics features</span><span class="verified">Official future-feature status</span></div>
+<div class="meta"><span>Last checked: Aug 16, 2026</span><span>PC graphics features</span><span class="verified">Official v1.0.8 status</span></div>
 
-<div class="quick-answer"><strong>Quick Answer</strong>Fictions has confirmed that more patches are planned and specifically named DLSS 4/4.5 (L/M) and FSR4. It has not published a release date for those features. The current official v1.0.7 notes do not list ultrawide support or frame generation as released features.</div>
+<div class="quick-answer"><strong>Quick Answer</strong>Fictions’ v1.0.8 notes list <strong>DLSS 4/4.5 (L/M) and FSR4 as implemented on PC</strong>. Frame generation is planned for a future update, while ultrawide support is in final testing and described as coming soon. The notes do not say whether PC Game Pass has a separate availability limitation.</div>
 
 ## Feature status
 
 | Feature | Official status |
 | --- | --- |
-| DLSS 4/4.5 (L/M) | Named as a planned future feature; no date announced. |
-| FSR4 | Named as a planned future feature; no date announced. |
-| Frame generation | Not confirmed in the current official v1.0.7 support notes. |
-| Ultrawide support | Not confirmed as released in the current official v1.0.7 support notes. |
+| DLSS 4/4.5 (L/M) | Implemented on PC in the official v1.0.8 notes. |
+| FSR4 | Implemented on PC in the official v1.0.8 notes. |
+| Frame generation | Planned for an upcoming patch; no date announced. |
+| Ultrawide support | In final testing; described as coming soon, with no exact date. |
+| PC Game Pass-specific availability | Not specified in the official notes. |
 
-## What v1.0.7 did change
+## No DLSS option on PC Game Pass?
 
-The update fixes an issue where upscaling settings reset after restarting the game and a V-Sync issue that could affect resolution settings. It also makes Performance mode the default for cutscenes.
+The patch notes say **PC**, but do not confirm whether Steam and PC Game Pass expose the same graphics options at the same time. If DLSS or FSR is missing:
 
-Do not treat third-party mods, frame-generation injectors, or configuration edits as official support. Use them only at your own risk and never present them as a confirmed fix.
+1. Confirm the installed game version and that the update has completed.
+2. Restart the game after the update and check the in-game display/graphics options again.
+3. Record your platform, store, game version, GPU, driver version, and a screenshot of the graphics menu.
+4. Send that information to [Fictions Support](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation).
+
+Do not present a third-party mod, injector, or configuration edit as an official fix.
+
+## Official source
+
+- [Fictions v1.0.8 / v1.006.000 patch notes](https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000)
 
 ## Related pages
 
-- [Patch v1.0.7 details](/en/guides/troubleshooting/patch-v1-0-7)
+- [Patch v1.0.8 details](/en/guides/troubleshooting/patch-v1-0-8)
 - [Cutscene Performance mode](/en/guides/troubleshooting/cutscene-performance-mode)
-- [Official v1.0.7 notes](https://support.fictions.com/hc/en-us/articles/54231342026771--BOR-Patch-Notes-v1-0-7-v1-005-000)
+- [Known issues and patch status](/en/guides/known-issues-patch-status)
