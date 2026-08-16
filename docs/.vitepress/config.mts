@@ -29,6 +29,8 @@ const keywordByPath: Record<string, string> = {
   'en/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements, PC game',
   'en/guides/first-hour': 'Beast of Reincarnation beginner guide, first hour, gameplay guide',
   'en/guides/missing-pre-order-bonus-dlc': 'Beast of Reincarnation missing pre order bonus, missing DLC, Deluxe DLC, Steam support',
+  'en/guides/troubleshooting/patch-v1-0-8': 'Beast of Reincarnation patch 1.0.8, v1.006.000, DLSS 4.5, FSR4, frame generation, ultrawide',
+  'en/guides/troubleshooting/ultrawide-dlss-fsr-status': 'Beast of Reincarnation DLSS PC Game Pass, FSR4, ultrawide, frame generation',
   'fr/': 'Beast of Reincarnation guide, date de sortie, Game Pass, PS5, monde ouvert, gameplay, bande annonce, Switch 2',
   'fr/information/': 'Beast of Reincarnation informations verifiees, date de sortie, Game Pass, PS5, monde ouvert, gameplay, bande annonce, Switch 2, precommande',
   'fr/information/game-pass': 'Beast of Reincarnation Game Pass, Xbox Game Pass, PC Game Pass',
@@ -131,7 +133,7 @@ function sidebarEn() { return [
     { text: 'How combat works', link: '/en/guides/combat-system' }, { text: 'Emma & Koo abilities', link: '/en/guides/emma-koo' },
     { text: 'PC requirements', link: '/en/guides/pc-requirements' }, { text: 'Release & platforms', link: '/en/guides/release-platforms' },
     { text: 'Troubleshooting hub', link: '/en/guides/troubleshooting/' }, { text: 'PC crashes', link: '/en/guides/troubleshooting/pc-crashing' }, { text: 'UE5 crash on launch', link: '/en/guides/troubleshooting/ue5-crash-on-launch' },
-    { text: 'Patch v1.0.7', link: '/en/guides/troubleshooting/patch-v1-0-7' }, { text: 'Controller settings', link: '/en/guides/troubleshooting/controller-settings' },
+    { text: 'Patch v1.0.8', link: '/en/guides/troubleshooting/patch-v1-0-8' }, { text: 'Patch v1.0.7 (previous)', link: '/en/guides/troubleshooting/patch-v1-0-7' }, { text: 'Controller settings', link: '/en/guides/troubleshooting/controller-settings' },
     { text: 'Cutscene performance mode', link: '/en/guides/troubleshooting/cutscene-performance-mode' }, { text: 'Deluxe upgrade', link: '/en/guides/troubleshooting/deluxe-upgrade' },
     { text: 'Missing bonus or DLC', link: '/en/guides/missing-pre-order-bonus-dlc' }, { text: 'Known issues & patch status', link: '/en/guides/known-issues-patch-status' }
   ] },
