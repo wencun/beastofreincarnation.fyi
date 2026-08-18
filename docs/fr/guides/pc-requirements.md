@@ -1,6 +1,6 @@
 ---
 title: Configuration PC Beast of Reincarnation (minimum et recommandée)
-description: Configuration PC officielle de Beast of Reincarnation : processeur, carte graphique, RAM, stockage, Windows et objectifs 1080p.
+description: "Configuration PC officielle de Beast of Reincarnation : processeur, carte graphique, RAM, stockage, Windows et objectifs 1080p."
 ---
 # Configuration PC Beast of Reincarnation
 
