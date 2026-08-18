@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 
-const props = defineProps<{ placement: 'top' | 'bottom' }>()
+const props = defineProps<{ placement: 'home' | 'top' | 'bottom' }>()
 const mounted = ref(false)
 
+const homeDesktop = {
+  src: '/ads/adsterra-728x90.html',
+  width: 728,
+  height: 90
+}
 const topDesktop = {
   src: '/ads/adsterra-300x250.html',
   width: 300,
@@ -23,7 +28,7 @@ const bottom = {
 const unit = computed(() => {
   if (props.placement === 'bottom') return bottom
   if (mounted.value && typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches) return topMobile
-  return topDesktop
+  return props.placement === 'home' ? homeDesktop : topDesktop
 })
 
 onMounted(() => {
