@@ -5,9 +5,9 @@ const props = defineProps<{ placement: 'top' | 'bottom' }>()
 const mounted = ref(false)
 
 const topDesktop = {
-  src: '/ads/adsterra-728x90.html',
-  width: 728,
-  height: 90
+  src: '/ads/adsterra-300x250.html',
+  width: 300,
+  height: 250
 }
 const topMobile = {
   src: '/ads/adsterra-320x50.html',
