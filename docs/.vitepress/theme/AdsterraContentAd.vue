@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 
 const props = defineProps<{ placement: 'top' | 'bottom' }>()
-const host = ref<HTMLDivElement>()
-let disposed = false
+const mounted = ref(false)
 
 const topDesktop = {
   key: '55f95785b3687849d9647354adcfb1a0',
@@ -21,49 +20,34 @@ const bottom = {
   height: 250
 }
 
-function loadAd() {
-  if (typeof window === 'undefined' || !host.value) return
-  const unit = props.placement === 'bottom'
-    ? bottom
-    : window.matchMedia('(max-width: 767px)').matches ? topMobile : topDesktop
-
-  const run = () => new Promise<void>((resolve) => {
-    if (disposed || !host.value) return resolve()
-    ;(window as Window & { atOptions?: unknown }).atOptions = {
-      key: unit.key,
-      format: 'iframe',
-      height: unit.height,
-      width: unit.width,
-      params: {}
-    }
-
-    const script = document.createElement('script')
-    script.src = `https://www.highperformanceformat.com/${unit.key}/invoke.js`
-    script.onload = () => resolve()
-    script.onerror = () => resolve()
-    host.value.appendChild(script)
-  })
-
-  const globalWindow = window as Window & { __borAdsterraQueue?: Promise<void> }
-  const previous = globalWindow.__borAdsterraQueue || Promise.resolve()
-  globalWindow.__borAdsterraQueue = previous.then(run, run)
-}
-
-onMounted(async () => {
-  await nextTick()
-  loadAd()
+const unit = computed(() => {
+  if (props.placement === 'bottom') return bottom
+  if (mounted.value && typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches) return topMobile
+  return topDesktop
 })
 
-onBeforeUnmount(() => {
-  disposed = true
+const srcdoc = computed(() => `<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style></head><body><script>atOptions={key:'${unit.value.key}',format:'iframe',height:${unit.value.height},width:${unit.value.width},params:{}};<\/script><script src="https://www.highperformanceformat.com/${unit.value.key}/invoke.js"><\/script></body></html>`)
+
+onMounted(() => {
+  mounted.value = true
 })
 </script>
 
 <template>
   <div
-    ref="host"
     class="adsterra-slot adsterra-content"
     :class="`adsterra-content--${placement}`"
     aria-label="Advertisement"
-  />
+  >
+    <iframe
+      class="adsterra-frame"
+      :srcdoc="srcdoc"
+      :title="placement === 'top' ? 'Advertisement' : 'Advertisement'"
+      :width="unit.width"
+      :height="unit.height"
+      frameborder="0"
+      scrolling="no"
+      sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
+    />
+  </div>
 </template>
