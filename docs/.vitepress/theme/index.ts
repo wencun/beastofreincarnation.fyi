@@ -7,7 +7,7 @@ import './custom.css'
 export default {
   extends: DefaultTheme,
   Layout: () => h(DefaultTheme.Layout, null, {
-    'home-hero-before': () => h(AdsterraContentAd, { placement: 'top' }),
+    'home-hero-before': () => h(AdsterraContentAd, { placement: 'home' }),
     'doc-before': () => h(AdsterraContentAd, { placement: 'top' }),
     'doc-after': () => h(AdsterraContentAd, { placement: 'bottom' }),
     'layout-bottom': () => h(TrackingConsent)
