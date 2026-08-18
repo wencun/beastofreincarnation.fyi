@@ -1,6 +1,6 @@
 ---
 title: Beast of Reincarnation PC Requirements (Minimum & Recommended)
-description: Official Beast of Reincarnation PC requirements: CPU, GPU, RAM, storage, Windows versions, and expected 1080p performance.
+description: "Official Beast of Reincarnation PC requirements: CPU, GPU, RAM, storage, Windows versions, and expected 1080p performance."
 ---
 # Beast of Reincarnation PC Requirements
 
