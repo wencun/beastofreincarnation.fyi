@@ -1,6 +1,6 @@
 ---
 title: Beast of Reincarnation Patch v1.0.8 (v1.006.000) Notes
-description: Source-checked Beast of Reincarnation v1.0.8 patch notes: DLSS, FSR, camera, subtitles, fixes, and upcoming features.
+description: "Source-checked Beast of Reincarnation v1.0.8 patch notes: DLSS, FSR, camera, subtitles, fixes, and upcoming features."
 ---
 # Beast of Reincarnation Patch v1.0.8 (v1.006.000)
 
