@@ -4,7 +4,7 @@ description: "Source-checked Beast of Reincarnation v1.0.8 patch notes: DLSS, FS
 ---
 # Beast of Reincarnation Patch v1.0.8 (v1.006.000)
 
-<div class="meta"><span>Published: Aug 16, 2026</span><span>Official patch summary</span><span class="verified">Based on Fictions’ v1.0.8 / v1.006.000 notes</span></div>
+<div class="meta"><span>Updated: Aug 20, 2026</span><span>Official patch summary</span><span class="verified">Based on Fictions’ v1.0.8 / v1.006.000 notes</span></div>
 
 <div class="quick-answer"><strong>Quick Answer</strong>Patch <strong>v1.0.8 / v1.006.000</strong> is live. It adds PC DLSS 4/4.5 (L/M) and FSR4 support, camera-distance and subtitle-size options, freer Interact-button mapping, plus selected performance, gameplay, camera, cutscene, and audio fixes.</div>
 
@@ -21,6 +21,10 @@ The official notes describe adjustments to player and cinematic cameras, event/c
 
 The notes also change the default auto-target setting to off for new configurations. Existing configurations are not changed automatically.
 
+## Current follow-up status
+
+On Aug 20, a Fictions developer replied on Steam that ultrawide fixes are planned. The developer also confirmed the team is aware that the selected DLSS option can revert to FSR after closing and restarting the game, and is planning a fix. Neither reply gives a release date, so treat both as pending work rather than completed fixes.
+
 ## Still upcoming
 
 Fictions lists frame generation, incremental event/cutscene skipping, and ultrawide support as future work. It says ultrawide is in final testing and will be released soon, but gives no exact date.
@@ -32,6 +36,7 @@ Fictions lists frame generation, incremental event/cutscene skipping, and ultraw
 - [Known issues and patch status](/en/guides/known-issues-patch-status)
 - [Fictions Support](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation)
 
-## Official source
+## Official sources
 
 - [Fictions: Patch Notes v1.0.8 / v1.006.000](https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000)
+- [Steam: Message from Game Freak](https://steamcommunity.com/app/2001760/discussions/0/586182361974104987/)
