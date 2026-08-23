@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
-defineProps<{ placement: 'home' | 'top' | 'bottom' }>()
+const props = defineProps<{ placement: 'home' | 'top' | 'bottom' }>()
 
 const client = 'ca-pub-4539826019899948'
-const slot = '4513023247'
+const slots = {
+  home: '5787696026',
+  top: '6909206005',
+  bottom: '5802184062'
+} as const
+const slot = computed(() => slots[props.placement])
+const container = ref<HTMLElement | null>(null)
 let adsenseLoader: Promise<void> | null = null
+let statusObserver: MutationObserver | null = null
 
 function loadAdsense() {
   if (typeof window === 'undefined') return Promise.resolve()
@@ -31,18 +38,39 @@ function loadAdsense() {
   return adsenseLoader
 }
 
+function updateFillState() {
+  const ad = container.value?.querySelector('.adsbygoogle')
+  if (ad?.getAttribute('data-ad-status') === 'unfilled') {
+    container.value?.classList.add('adsense-slot--unfilled')
+  }
+}
+
 onMounted(async () => {
+  statusObserver = new MutationObserver(updateFillState)
+  if (container.value) {
+    statusObserver.observe(container.value, {
+      attributes: true,
+      attributeFilter: ['data-ad-status'],
+      childList: true,
+      subtree: true
+    })
+  }
+
   try {
     await loadAdsense()
     ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    updateFillState()
   } catch {
     // Keep the guide usable if an ad blocker or network policy blocks the ad script.
   }
 })
+
+onBeforeUnmount(() => statusObserver?.disconnect())
 </script>
 
 <template>
   <div
+    ref="container"
     class="adsense-slot"
     :class="`adsense-slot--${placement}`"
     aria-label="Advertisement"
