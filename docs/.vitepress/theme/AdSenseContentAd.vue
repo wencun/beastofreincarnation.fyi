@@ -13,6 +13,7 @@ const slot = computed(() => slots[props.placement])
 const container = ref<HTMLElement | null>(null)
 let adsenseLoader: Promise<void> | null = null
 let statusObserver: MutationObserver | null = null
+let fillTimer: ReturnType<typeof setTimeout> | null = null
 
 function loadAdsense() {
   if (typeof window === 'undefined') return Promise.resolve()
@@ -42,6 +43,7 @@ function updateFillState() {
   const ad = container.value?.querySelector('.adsbygoogle')
   if (ad?.getAttribute('data-ad-status') === 'unfilled') {
     container.value?.classList.add('adsense-slot--unfilled')
+    if (fillTimer) clearTimeout(fillTimer)
   }
 }
 
@@ -60,12 +62,23 @@ onMounted(async () => {
     await loadAdsense()
     ;(window.adsbygoogle = window.adsbygoogle || []).push({})
     updateFillState()
+    // A newly approved site can receive no fill. Collapse only if AdSense has not
+    // marked the unit filled after a reasonable wait, so content is never blocked.
+    fillTimer = setTimeout(() => {
+      const ad = container.value?.querySelector('.adsbygoogle')
+      if (ad?.getAttribute('data-ad-status') !== 'filled') {
+        container.value?.classList.add('adsense-slot--unfilled')
+      }
+    }, 15000)
   } catch {
-    // Keep the guide usable if an ad blocker or network policy blocks the ad script.
+    container.value?.classList.add('adsense-slot--unfilled')
   }
 })
 
-onBeforeUnmount(() => statusObserver?.disconnect())
+onBeforeUnmount(() => {
+  statusObserver?.disconnect()
+  if (fillTimer) clearTimeout(fillTimer)
+})
 </script>
 
 <template>
