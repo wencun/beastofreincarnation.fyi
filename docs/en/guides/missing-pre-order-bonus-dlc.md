@@ -4,7 +4,7 @@ description: Official status and safe support steps for missing Beast of Reincar
 ---
 # Missing Pre-order Bonus or Deluxe DLC?
 
-<div class="meta"><span>Last checked: Aug 9, 2026</span><span>Purchase support</span><span>Steam · PS5 · Xbox</span><span class="verified">Official update available</span></div>
+<div class="meta"><span>Last checked: Aug 24, 2026</span><span>Purchase support</span><span>Steam · PS5 · Xbox</span><span class="verified">Official update available</span></div>
 
 <div class="quick-answer"><strong>Quick Answer</strong>GAME FREAK's Steam Community has pinned an official notice titled <strong>“FIXED: Pre-Order DLC Issue.”</strong> If you bought an eligible edition and content is still missing, check your entitlement with the store that processed your order. A fix notice does not guarantee that every account has refreshed immediately.</div>
 
@@ -17,9 +17,16 @@ The official Steam Community discussion hub currently lists **“FIXED: Pre-Orde
 
 We will update this page when the publisher publishes a more specific platform-by-platform fix note.
 
-## What should be included?
+## Redeeming the pre-order items
+
+Fictions' support guidance distinguishes the purchase type:
+
+- **Physical console editions:** use the code provided in the box or at checkout through the console store's **Redeem** option.
+- **Digital editions:** eligible pre-order items install together with the game; there is no separate code to enter.
 
 The official Steam information lists the Brown Shiba Skin for Koo and 30,000 Amber as the pre-order bonus. Deluxe content is separate and eligibility can vary by edition, store, region, and purchase date. Check your receipt and the live store listing before assuming an item was included.
+
+- [Official pre-order item redemption instructions](https://support.fictions.com/hc/en-us/articles/54050165767827--BOR-How-do-I-redeem-the-items-from-my-Beast-of-Reincarnation-pre-order)
 
 ## If content is still missing
 
