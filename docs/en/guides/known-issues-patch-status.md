@@ -4,50 +4,45 @@ description: Officially confirmed Beast of Reincarnation issue status, support l
 ---
 # Known Issues & Patch Status
 
-<div class="meta"><span>Last checked: Aug 16, 2026</span><span>Official-source tracker</span><span class="verified">No player speculation presented as fact</span></div>
+<div class="meta"><span>Last checked: Aug 24, 2026</span><span>Official-source tracker</span><span class="verified">No player speculation presented as fact</span></div>
 
-<div class="quick-answer"><strong>Quick Answer</strong>Fictions’ current official notes are <strong>v1.0.8 / v1.006.000</strong>. They add PC DLSS 4/4.5 (L/M) and FSR4 support, camera-distance options, subtitle-size options, and several gameplay, cutscene, and technical fixes. Frame generation and ultrawide support are still listed as upcoming.</div>
+<div class="quick-answer"><strong>Quick Answer</strong>The latest official patch notes are <strong>v1.0.8 / v1.006.000</strong>. Use this page to distinguish released fixes, work the developer has publicly said is pending, and player reports that still need confirmation.</div>
 
-## Current official status
+## Officially released or fixed
 
-| Topic | Status | What we can confirm |
+| Topic | Current status | What is confirmed |
 | --- | --- | --- |
-| Pre-order DLC | Fixed | An official pinned Steam Community announcement is titled **“FIXED: Pre-Order DLC Issue.”** |
-| Technical problems and bug reports | Collecting reports | The official Steam Community has a pinned **Bug Reports and Technical Issues** thread. |
-| Patch v1.0.8 / v1.006.000 | Released | Adds camera-distance choices, subtitle-size choices, PC DLSS 4/4.5 (L/M) and FSR4 support, revised input options, and selected gameplay, cutscene, sound, and performance fixes. |
-| Frame generation | Planned | Fictions says it is coming in an upcoming patch; no date is published. |
-| Ultrawide support | In final testing | Fictions says it will be released soon; no exact date is published. |
-| New language support | Not confirmed | Player requests are not an official commitment. |
+| Patch v1.0.8 / v1.006.000 | Released | Adds camera-distance choices, subtitle-size choices, freer Interact-button mapping, PC DLSS 4/4.5 (L/M), FSR4, and selected technical/gameplay fixes. |
+| Pre-order DLC issue | Fixed | The Steam Community lists an official pinned announcement titled **“FIXED: Pre-Order DLC Issue.”** Account entitlements can still require store support. |
+| Kiku “End of the Line” frame drop | Fixed in v1.0.8 | The official patch notes list a fix for a severe drop when activating this Bloom Strike skill mod. |
 
-- [Official v1.0.8 / v1.006.000 patch notes](https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000)
-- [Official Steam discussions: announcements and support threads](https://steamcommunity.com/app/2001760/discussions/)
-- [Official support and feedback form](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation)
+## Officially acknowledged or planned
 
-## Changes players are asking about
+| Topic | Status | What we can responsibly say |
+| --- | --- | --- |
+| DLSS selection reverts to FSR after restart | Developer aware | A Fictions developer said the team is aware and is planning a fix. No release date is published. |
+| Ultrawide support | Pending | Fictions says ultrawide fixes are in final testing / planned soon. No exact date is published. |
+| Frame generation | Planned | Fictions lists it as upcoming work; no date is published. |
+| Further camera and cutscene changes | Ongoing | The v1.0.8 notes say camera adjustments will continue as needed. |
 
-The v1.0.8 notes confirm a new Close/Medium/Far player-camera setting, adjustable subtitle text sizes, and freer Interact-button assignment. On PC, the notes list DLSS 4/4.5 (L/M) and FSR4 as implemented. The notes also list fixes for delayed enemy spawning in cloud-streaming areas and a severe frame drop when activating Kiku's “End of the Line” Bloom Strike.
+## Reports that are not yet official fixes
 
-The publisher does **not** give a complete fix list for every reported controller, performance, or save-data problem. A forum report is useful evidence to send to support, but it is not proof that an issue is officially fixed.
+A repeated forum or Reddit report can help identify a problem, but it is not enough to call it fixed or to recommend a risky workaround. This currently includes PC Game Pass-specific DLSS availability, individual crashes, controller conflicts, and mod-related problems.
 
-## What is planned next
+If your issue is in this group, record your platform, game version, GPU, driver version, exact steps, and screenshots or a crash dump before contacting support.
 
-Publicly named upcoming work includes frame generation, incremental cutscene/event skipping, ultrawide support, and further fixes for healing timing, text scale, cameras, water, collisions, and cutscene presentation. “Soon” is not a release date, so do not rely on a specific day.
+- [PC crashes: official support steps](/en/guides/troubleshooting/pc-crashing)
+- [DLSS, FSR, ultrawide and PC Game Pass status](/en/guides/troubleshooting/ultrawide-dlss-fsr-status)
+- [Controller settings and button mapping](/en/guides/troubleshooting/controller-settings)
 
-## How to report a problem well
+## Official sources and reporting
 
-When posting in the official technical thread or contacting support, include:
-
-1. Platform, store, region, edition, and game version.
-2. Exact steps that trigger the issue.
-3. Whether it happens every time.
-4. A screenshot or short video with private account details removed.
-5. Your attempted fixes and their results.
-
-Do not include account credentials, product keys, or order numbers in public posts.
+- [Fictions v1.0.8 / v1.006.000 patch notes](https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000)
+- [Steam: official discussions and support threads](https://steamcommunity.com/app/2001760/discussions/)
+- [Fictions Support](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation)
 
 ## Related guides
 
 - [Patch v1.0.8: what changed and what is next](/en/guides/troubleshooting/patch-v1-0-8)
-- [Ultrawide, DLSS, FSR, and frame generation status](/en/guides/troubleshooting/ultrawide-dlss-fsr-status)
-- [Controller settings and button mapping](/en/guides/troubleshooting/controller-settings)
+- [Missing pre-order bonus or DLC](/en/guides/missing-pre-order-bonus-dlc)
 - [All guides](/en/guides/)
