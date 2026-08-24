@@ -66,7 +66,6 @@ export default defineConfig({
   lastUpdated: true,
   sitemap: { hostname: domain },
   head: [
-    ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4539826019899948', crossorigin: 'anonymous' }],
     ...trackingHead,
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#d4ff5c' }],
