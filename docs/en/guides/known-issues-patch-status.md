@@ -4,15 +4,15 @@ description: Officially confirmed Beast of Reincarnation issue status, support l
 ---
 # Known Issues & Patch Status
 
-<div class="meta"><span>Last checked: Aug 24, 2026</span><span>Official-source tracker</span><span class="verified">No player speculation presented as fact</span></div>
+<div class="meta"><span>Last checked: Aug 25, 2026</span><span>Official-source tracker</span><span class="verified">No player speculation presented as fact</span></div>
 
-<div class="quick-answer"><strong>Quick Answer</strong>The latest official patch notes are <strong>v1.0.8 / v1.006.000</strong>. Use this page to distinguish released fixes, work the developer has publicly said is pending, and player reports that still need confirmation.</div>
+<div class="quick-answer"><strong>Quick Answer</strong>The latest official patch notes are <strong>v1.0.9 / v1.007.000</strong>. Use this page to distinguish released fixes, work the developer has publicly said is pending, and player reports that still need confirmation.</div>
 
 ## Officially released or fixed
 
 | Topic | Current status | What is confirmed |
 | --- | --- | --- |
-| Patch v1.0.8 / v1.006.000 | Released | Adds camera-distance choices, subtitle-size choices, freer Interact-button mapping, PC DLSS 4/4.5 (L/M), FSR4, and selected technical/gameplay fixes. |
+| Patch v1.0.9 / v1.007.000 | Released | Adds ultrawide support, DLSS/FSR frame generation, the first batch of skippable cutscenes, and several technical/gameplay fixes. |\n| Microsoft Store / Xbox PC upscaling unavailable | Fixed in v1.0.9 | The official notes say the issue introduced in the previous patch should now be resolved. |
 | Pre-order DLC issue | Fixed | The Steam Community lists an official pinned announcement titled **“FIXED: Pre-Order DLC Issue.”** Account entitlements can still require store support. |
 | Kiku “End of the Line” frame drop | Fixed in v1.0.8 | The official patch notes list a fix for a severe drop when activating this Bloom Strike skill mod. |
 
@@ -37,12 +37,12 @@ If your issue is in this group, record your platform, game version, GPU, driver 
 
 ## Official sources and reporting
 
-- [Fictions v1.0.8 / v1.006.000 patch notes](https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000)
+- [Fictions v1.0.9 / v1.007.000 patch notes](https://support.fictions.com/hc/en-us/articles/54749151147283--BOR-Patch-Notes-v1-0-9-v1-007-000)\n- [Fictions v1.0.8 / v1.006.000 patch notes](https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000)
 - [Steam: official discussions and support threads](https://steamcommunity.com/app/2001760/discussions/)
 - [Fictions Support](https://support.fictions.com/hc/en-us/categories/42992376012691-Beast-of-Reincarnation)
 
 ## Related guides
 
-- [Patch v1.0.8: what changed and what is next](/en/guides/troubleshooting/patch-v1-0-8)
+- [Patch v1.0.9: current patch details](/en/guides/troubleshooting/patch-v1-0-9)\n- [Patch v1.0.8: previous patch](/en/guides/troubleshooting/patch-v1-0-8)
 - [Missing pre-order bonus or DLC](/en/guides/missing-pre-order-bonus-dlc)
 - [All guides](/en/guides/)
