@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Beast of Reincarnation Guide
+title: "Patch Notes, PC Help & Game Pass"
+description: "Official Beast of Reincarnation patch notes, PC and Game Pass help, DLSS/FSR status, crashes, and pre-order support."
 hero:
   name: Answers before lore.
   text: Beast of Reincarnation Guide
