@@ -64,7 +64,11 @@ export default defineConfig({
   description: 'Fast, verified answers for Beast of Reincarnation players.',
   cleanUrls: true,
   lastUpdated: true,
-  sitemap: { hostname: domain },
+  sitemap: {
+    hostname: domain,
+    // The root URL permanently redirects to /en/ and must not be submitted as an indexable page.
+    transformItems: (items) => items.filter((item) => item.url !== '/')
+  },
   head: [
     ...trackingHead,
     ['link', { rel: 'icon', href: '/favicon.svg' }],
