@@ -1,6 +1,6 @@
 ---
 title: Beast of Reincarnation Patch v1.0.9 (v1.007.000) Notes
-description: Official Beast of Reincarnation v1.0.9 patch notes: ultrawide support, DLSS/FSR frame generation, PC Game Pass upscaling fix, and skippable cutscenes.
+description: "Official Beast of Reincarnation v1.0.9 patch notes: ultrawide support, DLSS/FSR frame generation, PC Game Pass upscaling fix, and skippable cutscenes."
 ---
 # Beast of Reincarnation Patch v1.0.9 (v1.007.000)
 
