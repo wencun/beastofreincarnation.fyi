@@ -12,5 +12,5 @@ Five focused answers based only on published official information. In-game walkt
 - [What are the PC requirements?](/en/guides/pc-requirements)
 - [When and where is the game releasing?](/en/guides/release-platforms)
 - [What should you do if a pre-order bonus or Deluxe DLC is missing?](/en/guides/missing-pre-order-bonus-dlc)
-- [Known issues and patch status](/en/guides/known-issues-patch-status)
+- [Patch v1.0.10: official notes and settings changes](/en/guides/troubleshooting/patch-v1-0-10)\n- [Known issues and patch status](/en/guides/known-issues-patch-status)
 - [Troubleshooting hub: crashes, patches, controller, cutscenes, and Deluxe upgrades](/en/guides/troubleshooting/)
