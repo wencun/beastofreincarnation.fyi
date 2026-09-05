@@ -1,6 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import AdsterraContentAd from './AdsterraContentAd.vue'
+import AdsterraMidContentAd from './AdsterraMidContentAd.vue'
 import TrackingConsent from './TrackingConsent.vue'
 import './custom.css'
 
@@ -10,6 +11,6 @@ export default {
     'home-hero-before': () => h(AdsterraContentAd, { placement: 'home' }),
     'doc-before': () => h(AdsterraContentAd, { placement: 'top' }),
     'doc-after': () => h(AdsterraContentAd, { placement: 'bottom' }),
-    'layout-bottom': () => h(TrackingConsent)
+    'layout-bottom': () => [h(AdsterraMidContentAd), h(TrackingConsent)]
   })
 }
