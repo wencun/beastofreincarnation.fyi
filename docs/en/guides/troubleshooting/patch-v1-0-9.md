@@ -6,7 +6,7 @@ description: "Official Beast of Reincarnation v1.0.9 patch notes: ultrawide supp
 
 <div class="meta"><span>Released: Aug 24, 2026</span><span>Official patch summary</span><span class="verified">Based on Fictions’ v1.0.9 / v1.007.000 notes</span></div>
 
-<div class="quick-answer"><strong>Quick Answer</strong>Patch <strong>v1.0.9 / v1.007.000</strong> is live. It adds ultrawide monitor support, DLSS/FSR frame-generation options, the first batch of skippable events and cutscenes, and fixes the Microsoft Store/Xbox PC issue that made upscaling features unavailable.</div>
+<div class="quick-answer"><strong>Previous patch</strong><a href="/en/guides/troubleshooting/patch-v1-0-10">Patch v1.0.10 / v1.008.000 is now the latest official note.</a> Patch <strong>v1.0.9 / v1.007.000</strong> is live. It adds ultrawide monitor support, DLSS/FSR frame-generation options, the first batch of skippable events and cutscenes, and fixes the Microsoft Store/Xbox PC issue that made upscaling features unavailable.</div>
 
 ## What changed for PC players
 
@@ -39,7 +39,7 @@ The official notes list the following as future work, without dates:
 
 ## Related pages
 
-- [Known issues and patch status](/en/guides/known-issues-patch-status)
+- [Patch v1.0.10: latest official notes](/en/guides/troubleshooting/patch-v1-0-10)\n- [Known issues and patch status](/en/guides/known-issues-patch-status)
 - [DLSS, FSR, ultrawide and PC Game Pass status](/en/guides/troubleshooting/ultrawide-dlss-fsr-status)
 - [Patch v1.0.8: previous patch](/en/guides/troubleshooting/patch-v1-0-8)
 - [PC crash support steps](/en/guides/troubleshooting/pc-crashing)
