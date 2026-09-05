@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Beast of Reincarnation Patch v1.0.10 at a glance</title>
+<desc id="desc">An original summary graphic of the official v1.0.10 patch, covering visual settings, materials, inventory behavior, and controls.</desc>
+<rect width="1600" height="900" fill="#0d160f"/>
+<rect x="74" y="65" width="1452" height="770" rx="34" fill="#142318" stroke="#405a43" stroke-width="3"/>
+<text x="140" y="170" fill="#d9ff71" font-family="Arial, sans-serif" font-size="65" font-weight="700">PATCH v1.0.10 · AT A GLANCE</text>
+<text x="142" y="228" fill="#b9c9ba" font-family="Arial, sans-serif" font-size="29">Official notes published by Fictions · August 28, 2026 · v1.008.000</text>
+<g font-family="Arial, sans-serif">
+<rect x="140" y="292" width="620" height="215" rx="24" fill="#1d3321"/>
+<text x="184" y="361" fill="#d9ff71" font-size="38" font-weight="700">VISUAL SETTINGS</text>
+<text x="184" y="416" fill="#f5f7f2" font-size="28">Film Grain and Chromatic Aberration</text>
+<text x="184" y="459" fill="#f5f7f2" font-size="28">can now be toggled on or off.</text>
+<rect x="840" y="292" width="620" height="215" rx="24" fill="#1d3321"/>
+<text x="884" y="361" fill="#d9ff71" font-size="38" font-weight="700">CUTSCENES</text>
+<text x="884" y="416" fill="#f5f7f2" font-size="28">Post-Processing now has its own</text>
+<text x="884" y="459" fill="#f5f7f2" font-size="28">on/off option during cutscenes.</text>
+<rect x="140" y="556" width="620" height="215" rx="24" fill="#1d3321"/>
+<text x="184" y="625" fill="#d9ff71" font-size="38" font-weight="700">EXPLORATION &amp; INVENTORY</text>
+<text x="184" y="680" fill="#f5f7f2" font-size="28">Blight Sprouts yield SP; Fractured Amber</text>
+<text x="184" y="723" fill="#f5f7f2" font-size="28">appears in select zones; excess items → Amber.</text>
+<rect x="840" y="556" width="620" height="215" rx="24" fill="#1d3321"/>
+<text x="884" y="625" fill="#d9ff71" font-size="38" font-weight="700">CONTROLS &amp; FIXES</text>
+<text x="884" y="680" fill="#f5f7f2" font-size="28">D-Pad Up can recover from knockback.</text>
+<text x="884" y="723" fill="#f5f7f2" font-size="28">Plus performance and technical fixes.</text>
+</g>
+</svg>
