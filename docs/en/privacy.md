@@ -6,7 +6,7 @@ This site has no accounts, comments, or user database. We use optional analytics
 
 ## Advertising
 
-We use Google AdSense to display advertising. Google and its partners may use cookies or similar identifiers to serve and measure ads, including ads based on a visitor's prior visits to this or other websites. You can manage ad personalization through [Google's Ad Settings](https://www.google.com/settings/ads) and learn more in [Google's Privacy & Terms](https://policies.google.com/technologies/ads).
+This site does not currently display advertising. If advertising is introduced in the future, we will update this policy before it is enabled to explain the provider, the data it processes, and the choices available to visitors.
 
 ## Optional analytics
 
