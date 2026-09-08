@@ -93,6 +93,7 @@ export default defineConfig({
   },
   head: [
     ...trackingHead,
+    ['script', { src: 'https://pl31245561.profitableratecpmnetwork.com/ec/98/90/ec98904283604d8150276082d6e79526.js' }],
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#d4ff5c' }],
     ['meta', { property: 'og:type', content: 'website' }],
