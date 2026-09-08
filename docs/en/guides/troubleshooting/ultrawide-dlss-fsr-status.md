@@ -1,12 +1,16 @@
 ---
-title: "Beast of Reincarnation Game Pass DLSS & Ultrawide Support"
-description: "Official v1.0.9 status for Beast of Reincarnation PC Game Pass upscaling, DLSS/FSR frame generation, and ultrawide support."
+title: "Beast of Reincarnation Ultrawide Fix: DLSS, FSR & Game Pass"
+description: "Official steps for Beast of Reincarnation ultrawide issues, DLSS/FSR frame generation, and missing upscaling options on PC Game Pass."
 ---
-# Beast of Reincarnation Game Pass DLSS & Ultrawide Support
+# Beast of Reincarnation Ultrawide Fix: DLSS, FSR & Game Pass
 
 <div class="meta"><span>Last checked: Aug 26, 2026</span><span>PC · Steam · PC Game Pass</span><span class="verified">Official v1.0.9 status</span></div>
 
 <div class="quick-answer"><strong>Quick Answer</strong>Fictions’ <strong>v1.0.9 / v1.007.000</strong> notes say the prior Microsoft Store/Xbox PC issue that made upscaling features unavailable has been resolved. The patch adds DLSS/FSR frame-generation options in Settings and supports most ultrawide and super-ultrawide monitors.</div>
+
+## Before trying an ultrawide fix
+
+Update before changing files or installing a mod. v1.0.9 added support for most ultrawide and super-ultrawide monitors, so an old launch workaround may no longer be needed. If the image is still stretched, cropped, or the option is missing, collect the game version, store, monitor resolution, GPU, driver version, and a screenshot before contacting support.
 
 ## What v1.0.9 officially confirms
 

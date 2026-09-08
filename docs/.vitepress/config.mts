@@ -28,6 +28,10 @@ const keywordByPath: Record<string, string> = {
   'en/guides/emma-koo': 'Beast of Reincarnation Emma Koo, character abilities, combat system',
   'en/guides/pc-requirements': 'Beast of Reincarnation PC requirements, system requirements, PC game',
   'en/guides/first-hour': 'Beast of Reincarnation beginner guide, first hour, gameplay guide',
+  'en/guides/difficulty-settings': 'Beast of Reincarnation difficulty settings, Story mode, Normal mode, Hard mode',
+  'en/guides/yellow-key-door': 'Beast of Reincarnation yellow key door, Yellow Key, sealed lair',
+  'en/guides/voice-actors': 'Beast of Reincarnation voice actors, voice cast, Emma voice actor, Yui Ishikawa',
+  'en/guides/best-weapons': 'Beast of Reincarnation best weapon, best weapons, sword, weapon guide',
   'en/guides/missing-pre-order-bonus-dlc': 'Beast of Reincarnation missing pre order bonus, missing DLC, Deluxe DLC, Steam support',
   'en/guides/troubleshooting/patch-v1-0-10': 'Beast of Reincarnation patch 1.0.10, v1.008.000, film grain, chromatic aberration, post processing, Blight Sprouts, Fractured Amber',
   'en/guides/troubleshooting/patch-v1-0-9': 'Beast of Reincarnation patch 1.0.9, v1.007.000, ultrawide, DLSS, FSR, frame generation, cutscene skip',
@@ -61,6 +65,22 @@ function keywordsFor(path: string) {
   return defaultKeywordsByLocale.en
 }
 
+// Only declare alternates that actually exist. Pointing hreflang at a missing
+// page makes it harder for crawlers to understand the intended language pair.
+const frenchRoutes = new Set([
+  '', 'about', 'contact', 'privacy', 'report-error',
+  'guides', 'guides/release-platforms', 'guides/first-hour', 'guides/emma-koo',
+  'guides/combat-system', 'guides/pc-requirements', 'guides/missing-pre-order-bonus-dlc',
+  'information', 'information/game-pass', 'information/ps5', 'information/open-world',
+  'information/gameplay', 'information/trailers', 'information/switch-2', 'information/editions'
+])
+
+const japaneseRoutes = new Set([
+  '', 'about', 'contact', 'privacy', 'report-error', 'guides',
+  'guides/release-platforms', 'guides/first-hour', 'guides/emma-koo',
+  'guides/combat-system', 'guides/pc-requirements'
+])
+
 export default defineConfig({
   title: 'Beast of Reincarnation Guide',
   description: 'Fast, verified answers for Beast of Reincarnation players.',
@@ -92,10 +112,15 @@ export default defineConfig({
   transformHead({ pageData }) {
     const path = pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
     const canonical = `${domain}/${path}`
-    const hasFrenchTranslation = path.startsWith('en/') || path.startsWith('fr/')
     const locale = path.startsWith('fr/') ? 'fr' : path.startsWith('ja/') ? 'ja' : path.startsWith('en/') ? 'en' : ''
     const route = locale ? path.slice(locale.length + 1) : ''
-    const alternateLocales = hasFrenchTranslation ? ['en', 'fr'] : locale ? ['en', 'ja'] : []
+    const alternateLocales = locale
+      ? [
+          'en',
+          ...(frenchRoutes.has(route) ? ['fr'] : []),
+          ...(japaneseRoutes.has(route) ? ['ja'] : [])
+        ]
+      : []
     const alternateLinks = alternateLocales.map((language) => [
       'link',
       { rel: 'alternate', hreflang: language, href: `${domain}/${language}/${route}` }
@@ -103,11 +128,29 @@ export default defineConfig({
 
     const keywords = keywordsFor(path)
 
+    const breadcrumbs = path && locale ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Beast of Reincarnation Guide', item: `${domain}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: pageData.title, item: canonical }
+      ]
+    } : null
+    const website = path === 'en/' ? {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Beast of Reincarnation Guide',
+      url: `${domain}/en/`,
+      inLanguage: 'en'
+    } : null
+
     return [
       ['link', { rel: 'canonical', href: canonical }],
       ...(keywords ? [['meta', { name: 'keywords', content: keywords }]] : []),
       ...alternateLinks,
-      ...(alternateLocales.length ? [['link', { rel: 'alternate', hreflang: 'x-default', href: `${domain}/en/${route}` }]] : [])
+      ...(alternateLocales.length ? [['link', { rel: 'alternate', hreflang: 'x-default', href: `${domain}/en/${route}` }]] : []),
+      ...(breadcrumbs ? [['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbs)]] : []),
+      ...(website ? [['script', { type: 'application/ld+json' }, JSON.stringify(website)]] : [])
     ]
   }
 })
@@ -137,6 +180,8 @@ function sidebarEn() { return [
     { text: 'All guides', link: '/en/guides/' }, { text: 'Your first hour', link: '/en/guides/first-hour' },
     { text: 'How combat works', link: '/en/guides/combat-system' }, { text: 'Emma & Koo abilities', link: '/en/guides/emma-koo' },
     { text: 'PC requirements', link: '/en/guides/pc-requirements' }, { text: 'Release & platforms', link: '/en/guides/release-platforms' },
+    { text: 'Difficulty settings', link: '/en/guides/difficulty-settings' }, { text: 'Yellow Key & door', link: '/en/guides/yellow-key-door' },
+    { text: 'Best weapons', link: '/en/guides/best-weapons' }, { text: 'Voice actors', link: '/en/guides/voice-actors' },
     { text: 'Troubleshooting hub', link: '/en/guides/troubleshooting/' }, { text: 'PC crashes', link: '/en/guides/troubleshooting/pc-crashing' }, { text: 'UE5 crash on launch', link: '/en/guides/troubleshooting/ue5-crash-on-launch' },
     { text: 'Patch v1.0.10 (latest)', link: '/en/guides/troubleshooting/patch-v1-0-10' }, { text: 'Patch v1.0.9 (previous)', link: '/en/guides/troubleshooting/patch-v1-0-9' }, { text: 'Patch v1.0.8', link: '/en/guides/troubleshooting/patch-v1-0-8' }, { text: 'Patch v1.0.7 (previous)', link: '/en/guides/troubleshooting/patch-v1-0-7' }, { text: 'Controller settings', link: '/en/guides/troubleshooting/controller-settings' },
     { text: 'Cutscene performance mode', link: '/en/guides/troubleshooting/cutscene-performance-mode' }, { text: 'Deluxe upgrade', link: '/en/guides/troubleshooting/deluxe-upgrade' },

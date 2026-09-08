@@ -44,6 +44,8 @@ Start with the problem you have now. Every page separates official information f
 <a class="home-card" href="/en/guides/known-issues-patch-status"><b>Latest patch & known issues</b><span>See what is released, officially planned, and still unconfirmed.</span></a>
 <a class="home-card" href="/en/guides/troubleshooting/ultrawide-dlss-fsr-status"><b>DLSS, FSR or ultrawide</b><span>Current PC graphics-feature status, including PC Game Pass guidance.</span></a>
 <a class="home-card" href="/en/guides/troubleshooting/pc-crashing"><b>My PC game crashes</b><span>Official crash-report steps for Steam and PC Game Pass.</span></a>
+<a class="home-card" href="/en/guides/difficulty-settings"><b>Difficulty settings</b><span>Choose Story, Normal, or Hard with the current confirmed information.</span></a>
+<a class="home-card" href="/en/guides/yellow-key-door"><b>Yellow Key or sealed door</b><span>Understand the key objective before following a location guide.</span></a>
 <a class="home-card" href="/en/guides/missing-pre-order-bonus-dlc"><b>Missing pre-order bonus or DLC</b><span>Check entitlement and the official fix status safely.</span></a>
 <a class="home-card" href="/en/information/game-pass"><b>I use Game Pass</b><span>Confirm the current official Game Pass availability first.</span></a>
 <a class="home-card" href="/en/guides/first-hour"><b>I am just starting</b><span>Use the verified first-hour guide before diving into spoilers.</span></a>
@@ -58,6 +60,7 @@ Start with the problem you have now. Every page separates official information f
 <a class="home-card" href="/en/guides/release-platforms"><b>Release date & platforms</b><span>Confirmed PC and PS5 launch information.</span></a>
 <a class="home-card" href="/en/guides/combat-system"><b>How combat works</b><span>The real-time and command-based split.</span></a>
 <a class="home-card" href="/en/guides/pc-requirements"><b>PC requirements</b><span>What the Steam listing currently confirms.</span></a>
+<a class="home-card" href="/en/guides/voice-actors"><b>Voice actors & language</b><span>Confirmed cast information and safe language-setting help.</span></a>
 </div>
 
 This is an unofficial fan guide. Beast of Reincarnation and related assets belong to their respective rights holders. [About & disclaimer](/en/about) · [Contact](/en/contact) · [Privacy](/en/privacy)

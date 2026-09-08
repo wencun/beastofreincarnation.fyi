@@ -1,12 +1,22 @@
 ---
-title: Beast of Reincarnation PC Crashing
-description: Official support steps for Beast of Reincarnation crashes on Steam and PC Game Pass.
+title: Beast of Reincarnation Crashing or Crash on Startup (PC Fixes)
+description: What to check when Beast of Reincarnation crashes on startup or while playing on Steam and PC Game Pass, plus official support steps.
 ---
-# Beast of Reincarnation PC Crashing
+# Beast of Reincarnation Crashing or Crash on Startup
 
 <div class="meta"><span>Last checked: Aug 26, 2026</span><span>Steam · PC Game Pass</span><span class="verified">Official support guidance</span></div>
 
-<div class="quick-answer"><strong>Quick Answer</strong>Fictions asks affected PC players to submit a support ticket so the issue can be investigated. Include your CrashDump when available. The official article says this is usually located at <code>C:\Users\YourUsername\AppData\Local\CrashDumps</code>.</div>
+<div class="quick-answer"><strong>Quick Answer</strong>If Beast of Reincarnation crashes on startup, at the main menu, or during play, install the current patch first and save the newest CrashDump before trying unsupported fixes. Fictions asks affected PC players to submit a ticket with their crash details; Windows crash dumps are usually in <code>C:\Users\YourUsername\AppData\Local\CrashDumps</code>.</div>
+
+## Does it crash on startup or later?
+
+Start by recording the exact point of failure. A crash before the title screen, a crash after loading a save, and a crash in one area can have different causes. The official support route is the same, but this detail helps support reproduce the problem.
+
+| When it crashes | Add this to your report |
+| --- | --- |
+| On startup or at the title screen | Whether it reaches the logo, whether an error appears, and the newest CrashDump |
+| When loading a save | The save slot, area, and whether it began after an update |
+| During a specific fight or area | The location, action, graphics setting, and a short capture if possible |
 
 ## Do this first
 

@@ -11,7 +11,7 @@ description: Source-checked help for Beast of Reincarnation PC crashes, patch st
 ## Choose your issue
 
 - [UE5 crash on launch or while playing](/en/guides/troubleshooting/ue5-crash-on-launch)
-- [Game crashes on PC (Steam or PC Game Pass)](/en/guides/troubleshooting/pc-crashing)
+- [Game crashes on startup or PC (Steam or PC Game Pass)](/en/guides/troubleshooting/pc-crashing)
 - [Patch v1.0.10: latest official patch notes](/en/guides/troubleshooting/patch-v1-0-10)\n- [Patch v1.0.9: ultrawide, DLSS/FSR and first skippable scenes](/en/guides/troubleshooting/patch-v1-0-9)\n- [Patch v1.0.8: what changed and what is planned](/en/guides/troubleshooting/patch-v1-0-8)
 - [Patch v1.0.7 (previous patch)](/en/guides/troubleshooting/patch-v1-0-7)
 - [Controller settings and button mapping](/en/guides/troubleshooting/controller-settings)
