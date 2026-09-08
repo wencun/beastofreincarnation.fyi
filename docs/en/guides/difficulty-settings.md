@@ -1,5 +1,5 @@
 ---
-title: Beast of Reincarnation Difficulty Settings: Story, Normal, and Hard
+title: "Beast of Reincarnation Difficulty Settings: Story, Normal, and Hard"
 description: A current, source-checked guide to Beast of Reincarnation difficulty settings, including what is confirmed about Story, Normal, and Hard.
 ---
 # Beast of Reincarnation Difficulty Settings: Story, Normal, and Hard

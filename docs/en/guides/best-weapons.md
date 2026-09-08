@@ -1,6 +1,6 @@
 ---
-title: Beast of Reincarnation Best Weapons: Choose the Right Sword
-description: A practical Beast of Reincarnation best-weapon guide: how to choose a sword for your build, progression point, and boss rather than following an unverified tier list.
+title: "Beast of Reincarnation Best Weapons: Choose the Right Sword"
+description: "A practical Beast of Reincarnation best-weapon guide: how to choose a sword for your build, progression point, and boss rather than following an unverified tier list."
 ---
 # Beast of Reincarnation Best Weapons: Choose the Right Sword
 

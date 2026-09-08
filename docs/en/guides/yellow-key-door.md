@@ -1,5 +1,5 @@
 ---
-title: Beast of Reincarnation Yellow Key Door: What It Opens
+title: "Beast of Reincarnation Yellow Key Door: What It Opens"
 description: What the Yellow Key is for in Beast of Reincarnation, why players search for a Yellow Key door, and how to avoid following an incorrect key route.
 ---
 # Beast of Reincarnation Yellow Key Door: What It Opens
