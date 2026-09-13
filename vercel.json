@@ -20,6 +20,11 @@
       "permanent": true
     },
     {
+      "source": "/fr/guides/troubleshooting/",
+      "destination": "/en/guides/troubleshooting/",
+      "permanent": true
+    },
+    {
       "source": "/fr/guides/troubleshooting/pc-crashing",
       "destination": "/en/guides/troubleshooting/pc-crashing",
       "permanent": true
