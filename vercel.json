@@ -8,6 +8,31 @@
       "source": "/",
       "destination": "/en/",
       "permanent": true
+    },
+    {
+      "source": "/fr/guides/troubleshooting/patch-v1-0-9",
+      "destination": "/en/guides/troubleshooting/patch-v1-0-9",
+      "permanent": true
+    },
+    {
+      "source": "/fr/guides/troubleshooting",
+      "destination": "/en/guides/troubleshooting/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/guides/troubleshooting/pc-crashing",
+      "destination": "/en/guides/troubleshooting/pc-crashing",
+      "permanent": true
+    },
+    {
+      "source": "/fr/guides/known-issues-patch-status",
+      "destination": "/en/guides/known-issues-patch-status",
+      "permanent": true
+    },
+    {
+      "source": "/fr/guides/troubleshooting/ultrawide-dlss-fsr-status",
+      "destination": "/en/guides/troubleshooting/ultrawide-dlss-fsr-status",
+      "permanent": true
     }
   ]
 }
